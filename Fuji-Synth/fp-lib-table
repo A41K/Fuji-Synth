@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "touch_synth") (type "KiCad") (uri "${KIPRJMOD}/touch_synth.pretty") (options "") (descr ""))
+	(lib (name "Library") (type "KiCad") (uri "${KIPRJMOD}/touch_synth.pretty/Library.pretty") (options "") (descr ""))
+)

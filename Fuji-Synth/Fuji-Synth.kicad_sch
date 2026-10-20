@@ -4253,6 +4253,12 @@
 		(uuid "5d3fafcc-d169-4661-bc28-8f73ec48443e")
 	)
 	(junction
+		(at 55.88 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62275752-9396-408a-9000-961869271989")
+	)
+	(junction
 		(at 59.69 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4277,10 +4283,10 @@
 		(uuid "976512ed-e88c-420e-8550-d60a5b3d63e3")
 	)
 	(junction
-		(at 54.61 99.06)
+		(at 81.28 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "be0cdef3-df5e-4149-a8a1-0183bc512bfe")
+		(uuid "b55d5d3a-e563-459d-abd2-d32b1563d41f")
 	)
 	(junction
 		(at 129.54 29.21)
@@ -4424,7 +4430,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 69.85) (xy 85.09 69.85)
+			(xy 77.47 69.85) (xy 81.28 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4474,7 +4480,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 99.06) (xy 54.61 97.79)
+			(xy 54.61 97.79) (xy 54.61 100.33)
 		)
 		(stroke
 			(width 0)
@@ -4511,16 +4517,6 @@
 			(type default)
 		)
 		(uuid "3189607b-baf3-4181-9f3c-3f4680155d81")
-	)
-	(wire
-		(pts
-			(xy 54.61 100.33) (xy 54.61 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34ca85e1-5b80-453f-aa3f-ab58f51bf355")
 	)
 	(wire
 		(pts
@@ -4584,6 +4580,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 69.85) (xy 85.09 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53bddc19-b95b-4e1a-8074-2b34b731842d")
+	)
+	(wire
+		(pts
 			(xy 58.42 142.24) (xy 57.15 142.24)
 		)
 		(stroke
@@ -4591,6 +4597,16 @@
 			(type default)
 		)
 		(uuid "5735d1d8-d2ae-4a1e-89aa-76afeeee0c65")
+	)
+	(wire
+		(pts
+			(xy 55.88 133.35) (xy 44.45 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "575fb8be-bceb-47f7-81f9-ffb751d67f58")
 	)
 	(wire
 		(pts
@@ -4774,6 +4790,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 68.58) (xy 81.28 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8af39df8-d820-4567-9caa-cabdd41c9f1e")
+	)
+	(wire
+		(pts
 			(xy 46.99 128.27) (xy 46.99 129.54)
 		)
 		(stroke
@@ -4874,7 +4900,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 133.35) (xy 44.45 133.35)
+			(xy 82.55 133.35) (xy 55.88 133.35)
 		)
 		(stroke
 			(width 0)
@@ -6965,7 +6991,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 171.45 37.338 90)
 			(hide yes)
 			(show_name no)
@@ -7024,7 +7050,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0af4ffef-a2e6-4095-88e8-2fab1701ad5f")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR06"
 			(at 35.56 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -7085,7 +7111,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR027")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -7103,7 +7129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b3f2fbe-b33b-4dea-a09f-5dd87fc709f1")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR037"
 			(at 179.07 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -7164,7 +7190,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR044")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -7182,7 +7208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bbffbaf-dd30-404d-bb85-34fa09cb8d9a")
-		(property "Reference" "SW2"
+		(property "Reference" "SW5"
 			(at 208.28 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7202,7 +7228,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 208.28 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -7244,7 +7270,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "SW2")
+					(reference "SW5")
 					(unit 1)
 				)
 			)
@@ -7261,7 +7287,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0c7776c4-7249-45f7-8edd-94d424ff6e43")
-		(property "Reference" "C5"
+		(property "Reference" "C3"
 			(at 44.196 122.682 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7283,7 +7309,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 47.9552 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -7325,7 +7351,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "C5")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -7362,7 +7388,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 171.45 57.658 90)
 			(hide yes)
 			(show_name no)
@@ -7422,7 +7448,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "199f2ec8-75a1-4a3e-978d-b7df6943905b")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR030"
 			(at 142.24 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -7483,7 +7509,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR034")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -7500,7 +7526,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1c395eff-df94-43bf-a044-22380c694ff1")
-		(property "Reference" "C6"
+		(property "Reference" "C1"
 			(at 22.098 122.428 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7522,7 +7548,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 22.5552 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -7564,7 +7590,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "C6")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -7581,7 +7607,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1e7d58be-aae2-4b11-9878-ac363b6c25f1")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR05"
 			(at 25.4 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -7641,7 +7667,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR025")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -7678,7 +7704,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 171.45 62.738 90)
 			(hide yes)
 			(show_name no)
@@ -7738,7 +7764,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21168060-3d03-4844-82ad-560904581e8a")
-		(property "Reference" "SW3"
+		(property "Reference" "SW1"
 			(at 128.27 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7758,7 +7784,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm"
 			(at 124.46 91.186 0)
 			(hide yes)
 			(show_name no)
@@ -7809,7 +7835,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "SW3")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -7846,7 +7872,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 171.45 47.498 90)
 			(hide yes)
 			(show_name no)
@@ -7905,7 +7931,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2aba90e7-de71-4dc1-ab16-e43695acdc11")
-		(property "Reference" "C2"
+		(property "Reference" "C9"
 			(at 139.7 59.436 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7927,7 +7953,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 139.7 57.4548 0)
 			(hide yes)
 			(show_name no)
@@ -7969,7 +7995,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "C2")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -7986,7 +8012,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f6be371-c818-4a18-9db0-364abd87ebaf")
-		(property "Reference" "C7"
+		(property "Reference" "C5"
 			(at 65.024 149.86 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8006,7 +8032,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 66.04 150.1648 0)
 			(hide yes)
 			(show_name no)
@@ -8048,7 +8074,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "C7")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -8065,7 +8091,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "321c89eb-29d1-4d0f-8cb7-5f04a4664056")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR015"
 			(at 54.61 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -8125,7 +8151,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR01")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -8162,7 +8188,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 171.45 42.418 90)
 			(hide yes)
 			(show_name no)
@@ -8221,7 +8247,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3459d401-9501-487f-b2cb-ebf1b01a2f52")
-		(property "Reference" "C9"
+		(property "Reference" "C6"
 			(at 75.184 154.432 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8241,7 +8267,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 72.6948 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -8283,7 +8309,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "C9")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -8301,7 +8327,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "361e2152-ec74-4455-8aa9-68b3347e2cd5")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR033"
 			(at 152.4 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -8361,7 +8387,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR012")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -8379,7 +8405,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3875ae72-fa30-4171-b60d-a73e0621f1a0")
-		(property "Reference" "C10"
+		(property "Reference" "C8"
 			(at 120.65 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8401,7 +8427,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 117.8052 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -8443,86 +8469,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 60.96 20.32 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b3d938a-feb2-4b9e-8b28-107a1825b9a2")
-		(property "Reference" "#FLG03"
-			(at 62.865 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 64.77 20.3199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 60.96 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "93231f6f-b17a-4031-a396-f88f3a21b678")
-		)
-		(instances
-			(project "Fuji-Synth"
-				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#FLG03")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -8540,7 +8487,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d42c6e7-43a9-4844-b89a-17bec86e6531")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR09"
 			(at 41.91 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -8601,7 +8548,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR016")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -8641,7 +8588,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
+		(property "Footprint" "Module:RaspberryPi_Pico_Common_THT"
 			(at 54.61 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8814,7 +8761,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4120b819-987b-4e86-b451-aca0e763c53d")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR07"
 			(at 25.4 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -8874,7 +8821,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR026")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -8892,7 +8839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41690d18-6c5f-438c-89c1-db00cb926bf7")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR028"
 			(at 125.73 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -8953,7 +8900,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR08")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -8990,7 +8937,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TouchPad_D12mm"
 			(at 196.85 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -9066,7 +9013,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 198.12 124.1552 0)
 			(hide yes)
 			(show_name no)
@@ -9126,7 +9073,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "452bab06-28ad-46da-99c2-ee32cc5737a8")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR044"
 			(at 220.98 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -9187,7 +9134,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR039")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -9205,7 +9152,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45e054d6-8323-4759-9d7d-35cce2adf5b7")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR039"
 			(at 181.61 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -9266,7 +9213,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR037")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -9284,7 +9231,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46dfb8fc-4bd7-480f-ac34-b6934dafcf8a")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR021"
 			(at 99.06 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -9345,86 +9292,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 53.34 20.32 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "486dd776-602f-4957-9f20-f6472f4e0f47")
-		(property "Reference" "#FLG01"
-			(at 51.435 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 49.53 20.3199 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 53.34 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1386d7cf-bdcd-4dcc-9df9-2e2947fc45fe")
-		)
-		(instances
-			(project "Fuji-Synth"
-				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#FLG01")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -9441,7 +9309,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "49d81758-bf09-4528-9692-c51fa563d195")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR03"
 			(at 25.4 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -9501,7 +9369,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR028")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -9538,7 +9406,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 171.45 55.118 90)
 			(hide yes)
 			(show_name no)
@@ -9597,7 +9465,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4ce2a332-86b3-4968-bcb0-3b42d042b0cb")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR020"
 			(at 81.28 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -9657,7 +9525,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR029")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -9674,7 +9542,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4df483e8-3468-49b1-8d7e-ed901932aebb")
-		(property "Reference" "C3"
+		(property "Reference" "C10"
 			(at 149.86 25.146 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9696,7 +9564,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 149.86 23.1648 0)
 			(hide yes)
 			(show_name no)
@@ -9738,7 +9606,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "C3")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -9775,7 +9643,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TouchPad_D12mm"
 			(at 196.85 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -9831,7 +9699,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4ff390a1-edaa-47f3-82be-609ae771a2a7")
-		(property "Reference" "R3"
+		(property "Reference" "R5"
 			(at 129.794 41.148 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9851,7 +9719,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 129.54 44.958 90)
 			(hide yes)
 			(show_name no)
@@ -9893,7 +9761,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "R3")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -9930,7 +9798,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TouchPad_D12mm"
 			(at 196.85 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -10006,7 +9874,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 171.45 44.958 90)
 			(hide yes)
 			(show_name no)
@@ -10085,7 +9953,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TouchPad_D12mm"
 			(at 196.85 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -10141,7 +10009,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "562326ce-60ca-4fde-b79a-087198ec77a4")
-		(property "Reference" "C1"
+		(property "Reference" "C7"
 			(at 85.09 68.834 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10163,7 +10031,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 85.09 70.8152 0)
 			(hide yes)
 			(show_name no)
@@ -10205,7 +10073,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "C1")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -10223,7 +10091,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "564acf0f-1722-44c1-a592-be5a94aa5c83")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR010"
 			(at 41.91 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -10284,7 +10152,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR018")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -10301,7 +10169,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5e8b1462-e486-4f01-91e7-c340f67bfeef")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR013"
 			(at 50.8 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -10362,7 +10230,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR017")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -10380,7 +10248,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f9893eb-d614-4be5-9144-2b2b87142e51")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR029"
 			(at 125.73 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -10441,7 +10309,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR09")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -10459,7 +10327,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61f664b5-9ae6-405f-81fd-6b3ea680b521")
-		(property "Reference" "U1"
+		(property "Reference" "U3"
 			(at 154.5433 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10577,7 +10445,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "U1")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -10594,7 +10462,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "62b84b7b-9881-4bc2-b243-c41640fcdda6")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR025"
 			(at 125.73 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -10655,7 +10523,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR015")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -10673,7 +10541,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c5e6e59-bde7-4884-a4d9-3944e36cf9df")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR08"
 			(at 38.1 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -10733,7 +10601,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR06")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -10751,7 +10619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f8860c3-534b-414d-918f-618a41dfe46d")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR034"
 			(at 152.4 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -10811,7 +10679,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR013")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -10828,7 +10696,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "741c6d45-2e0f-40b2-92fd-ed88304abf82")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR018"
 			(at 71.12 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -10888,7 +10756,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR023")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -10928,7 +10796,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 191.77 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -11024,7 +10892,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "811cab08-98b4-4258-8d62-4019619b5e10")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR026"
 			(at 119.38 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -11085,7 +10953,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR032")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -11122,7 +10990,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TouchPad_D12mm"
 			(at 215.9 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -11198,7 +11066,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TouchPad_D12mm"
 			(at 196.85 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -11255,7 +11123,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "872c88a7-21c1-43f7-8983-ef49a92d59bd")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR02"
 			(at 21.59 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -11315,7 +11183,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR022")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -11333,7 +11201,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c40bedb-8d53-4a2e-8899-df85ac176820")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR041"
 			(at 191.77 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -11393,7 +11261,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR038")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -11430,7 +11298,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TouchPad_D12mm"
 			(at 196.85 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -11506,7 +11374,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 171.45 39.878 90)
 			(hide yes)
 			(show_name no)
@@ -11585,7 +11453,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 171.45 50.038 90)
 			(hide yes)
 			(show_name no)
@@ -11664,7 +11532,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TouchPad_D12mm"
 			(at 196.85 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -11721,7 +11589,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a31952b-4883-4408-8fb3-ec4ddc5f8003")
-		(property "Reference" "SW5"
+		(property "Reference" "SW4"
 			(at 207.01 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11741,7 +11609,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm"
 			(at 203.2 91.186 0)
 			(hide yes)
 			(show_name no)
@@ -11792,86 +11660,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "SW5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 54.61 99.06 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9d537d0b-7884-4820-9be9-6f501cfa3720")
-		(property "Reference" "#FLG02"
-			(at 52.705 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 50.8 99.0599 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 54.61 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 54.61 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7f66c6e6-4924-479e-9e02-f3e33184cd9c")
-		)
-		(instances
-			(project "Fuji-Synth"
-				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#FLG02")
+					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -11889,7 +11678,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d65d7f0-f72c-4fa5-a8e7-012c321d111b")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR016"
 			(at 54.61 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -11949,7 +11738,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR02")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -11986,7 +11775,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TouchPad_D12mm"
 			(at 215.9 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -12032,6 +11821,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 55.88 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7645396-3857-42c8-97c0-aff1ad773f78")
+		(property "Reference" "#FLG01"
+			(at 55.88 131.445 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 55.88 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 55.88 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "67a72613-23b7-4173-b7ed-c5fb3fd18bb2")
+		)
+		(instances
+			(project "Fuji-Synth"
+				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 196.85 36.83 90)
 		(unit 1)
@@ -12062,7 +11929,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TouchPad_D12mm"
 			(at 196.85 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -12118,7 +11985,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ab6c3183-975f-478d-bdb6-a49645480185")
-		(property "Reference" "R5"
+		(property "Reference" "R1"
 			(at 66.548 138.684 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12138,7 +12005,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 62.23 141.478 90)
 			(hide yes)
 			(show_name no)
@@ -12180,7 +12047,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "R5")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -12198,7 +12065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ada785c3-acd2-4aea-9439-7a0849b6cf0a")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR01"
 			(at 21.59 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -12258,7 +12125,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR030")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -12373,7 +12240,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 171.45 60.198 90)
 			(hide yes)
 			(show_name no)
@@ -12432,7 +12299,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b94878db-4d70-4055-bd37-8adc0d9de74e")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR04"
 			(at 25.4 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -12492,7 +12359,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR024")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -12510,7 +12377,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b95e5f4a-a4bf-4eee-9e6f-ff1986ae8305")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR036"
 			(at 165.1 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -12571,7 +12438,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR040")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -12588,7 +12455,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba115b80-9f62-4d28-97d8-89f14619aff3")
-		(property "Reference" "R6"
+		(property "Reference" "R2"
 			(at 66.548 141.224 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12608,7 +12475,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 62.23 144.018 90)
 			(hide yes)
 			(show_name no)
@@ -12650,7 +12517,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "R6")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -12667,7 +12534,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf4ee3b1-84b4-4492-91bd-8c866ed57353")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR022"
 			(at 116.84 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -12728,7 +12595,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR014")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -12746,7 +12613,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c372aff0-a752-44b1-9fed-1382ba0a0930")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 49.1333 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12864,7 +12731,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -12881,7 +12748,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c3a84cd4-a6a9-446f-8590-04be9970905b")
-		(property "Reference" "C8"
+		(property "Reference" "C4"
 			(at 63.754 163.83 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12901,7 +12768,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 64.77 164.1348 0)
 			(hide yes)
 			(show_name no)
@@ -12943,7 +12810,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "C8")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -12980,7 +12847,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 171.45 52.578 90)
 			(hide yes)
 			(show_name no)
@@ -13059,7 +12926,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TouchPad_D12mm"
 			(at 196.85 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -13135,7 +13002,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 166.37 124.1552 0)
 			(hide yes)
 			(show_name no)
@@ -13194,7 +13061,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cc8ab001-ace0-4329-8222-b79a03ab5080")
-		(property "Reference" "C4"
+		(property "Reference" "C2"
 			(at 35.306 122.682 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13216,7 +13083,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 39.0652 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -13258,7 +13125,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "C4")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -13275,7 +13142,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cd048c73-568e-446c-820a-925ba7ba495f")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR027"
 			(at 129.54 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -13336,7 +13203,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR07")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -13353,7 +13220,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cda6d05a-4387-46e4-81e4-a6f672bd15aa")
-		(property "Reference" "R1"
+		(property "Reference" "R3"
 			(at 114.3 36.068 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13375,7 +13242,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 118.618 36.83 90)
 			(hide yes)
 			(show_name no)
@@ -13417,7 +13284,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "R1")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -13435,7 +13302,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce7727d0-0637-4e97-9faa-e89a884c90d0")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR031"
 			(at 133.35 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -13496,7 +13363,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR010")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -13513,7 +13380,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d0503d93-8060-484c-9d89-67c77f3de411")
-		(property "Reference" "R2"
+		(property "Reference" "R4"
 			(at 126.492 26.67 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13535,7 +13402,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 125.73 30.988 90)
 			(hide yes)
 			(show_name no)
@@ -13577,7 +13444,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "R2")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -13594,7 +13461,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d1863ff6-47d8-4aed-ad49-2b87116c7a69")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR014"
 			(at 46.99 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -13654,7 +13521,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR020")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -13671,7 +13538,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d67aa456-c663-4789-93a2-e0eb9ec48c39")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR017"
 			(at 59.69 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -13731,7 +13598,84 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR03")
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 81.28 68.58 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "da107a85-0519-4a82-95ba-dbe96d6fe35d")
+		(property "Reference" "#FLG02"
+			(at 81.28 70.485 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 81.534 72.136 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 81.28 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "142adbc9-d325-4407-86b9-aa2006fd1427")
+		)
+		(instances
+			(project "Fuji-Synth"
+				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -13749,7 +13693,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da9a31ce-b61d-4040-abe0-3c947841e762")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR040"
 			(at 189.23 127 0)
 			(hide yes)
 			(show_name no)
@@ -13809,7 +13753,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR041")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -13826,7 +13770,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e11eb360-f0da-44ef-b0d5-708eb92ba95c")
-		(property "Reference" "R4"
+		(property "Reference" "R6"
 			(at 135.89 51.054 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13846,7 +13790,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 135.89 55.118 90)
 			(hide yes)
 			(show_name no)
@@ -13888,7 +13832,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "R4")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -13906,7 +13850,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1fe5b1b-3597-4867-a549-25c14d5b8126")
-		(property "Reference" "SW1"
+		(property "Reference" "SW3"
 			(at 167.64 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13926,7 +13870,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 167.64 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -13968,7 +13912,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "SW1")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -13986,7 +13930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e359d1ce-a152-489a-ae94-5bd150076f08")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR038"
 			(at 180.34 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -14047,7 +13991,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR043")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -14065,7 +14009,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e563c03d-29a0-463b-8e38-bcf4bcf77c63")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 125.73 139.6999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14135,7 +14079,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -14152,7 +14096,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e5ba4dee-ff3a-4246-938b-e01f21b2b5a7")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR019"
 			(at 73.66 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -14212,7 +14156,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR021")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -14230,7 +14174,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e91cce75-a9e1-4fda-ba12-12bacd8030ed")
-		(property "Reference" "SW4"
+		(property "Reference" "SW2"
 			(at 167.64 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14250,7 +14194,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm"
 			(at 163.83 91.186 0)
 			(hide yes)
 			(show_name no)
@@ -14301,7 +14245,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "SW4")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -14338,7 +14282,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 171.45 34.798 90)
 			(hide yes)
 			(show_name no)
@@ -14420,7 +14364,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 160.02 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -14516,7 +14460,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edb3611f-a231-4100-8226-6ca419ce3cd5")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR043"
 			(at 219.71 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -14577,7 +14521,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR045")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -14594,7 +14538,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f024a234-a9e5-4c9f-8dea-c8d033149530")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR011"
 			(at 44.45 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -14655,7 +14599,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR019")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -14673,7 +14617,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6651c23-f640-4c30-876e-36c35a1266d5")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR024"
 			(at 116.84 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -14733,7 +14677,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR031")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -14830,7 +14774,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb1ca606-985f-4b09-9c38-bf86f4f22ca1")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR012"
 			(at 46.99 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -14890,7 +14834,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR05")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -14908,7 +14852,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb1da2db-b528-4549-b628-d388169c72ea")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR023"
 			(at 116.84 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -14968,7 +14912,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR033")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -15005,7 +14949,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:TouchPad_D12mm"
 			(at 215.9 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -15062,7 +15006,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd9c6b8e-abca-4e7e-b309-d035d6211e22")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR032"
 			(at 135.89 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -15123,7 +15067,7 @@
 		(instances
 			(project "Fuji-Synth"
 				(path "/6656e598-78b6-426d-b1f7-a4441b81cbf2"
-					(reference "#PWR011")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -15161,7 +15105,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Audio:Jack_3.5mm_Lumberg_1503_02_Horizontal"
 			(at 69.85 124.46 0)
 			(hide yes)
 			(show_name no)
