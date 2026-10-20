@@ -4192,6 +4192,18 @@
 		)
 		(uuid "8a4529fc-7dc9-4f93-9123-109763721a6a")
 	)
+	(text "Fuji Synth v1.0"
+		(exclude_from_sim no)
+		(at 211.836 18.796 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "b5107bb7-9978-4b3c-b2af-3d8335b11345")
+	)
 	(text "3x Rotary Encoder (SW3,4,5)"
 		(exclude_from_sim no)
 		(at 133.35 109.22 0)
@@ -10796,7 +10808,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical"
 			(at 191.77 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -14364,7 +14376,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical"
 			(at 160.02 123.19 0)
 			(hide yes)
 			(show_name no)
