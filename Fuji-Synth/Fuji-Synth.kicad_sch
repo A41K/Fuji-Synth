@@ -4219,7 +4219,7 @@
 		)
 		(uuid "d73c884e-4919-42d2-8aa2-97565b63f167")
 	)
-	(text "OLED (U3)"
+	(text "OLED (U2)"
 		(exclude_from_sim no)
 		(at 100.838 167.386 0)
 		(effects
@@ -4243,7 +4243,7 @@
 		)
 		(uuid "1f5082e1-0b07-4790-a6fc-ded177e0763e")
 	)
-	(text "PCM5102A + Jack (U2) (J1)"
+	(text "PCM5102A + Jack (U1) (J1)"
 		(exclude_from_sim no)
 		(at 41.148 178.054 0)
 		(effects
@@ -4267,7 +4267,7 @@
 		)
 		(uuid "4d783d3f-c4c0-4998-bce4-c0a38b286e20")
 	)
-	(text "2x Buttons (SW1,2)"
+	(text "2x Buttons (SW3,5)"
 		(exclude_from_sim no)
 		(at 167.894 163.83 0)
 		(effects
@@ -4279,7 +4279,7 @@
 		)
 		(uuid "6f2ffa00-68c2-44fe-8430-2ac49c23735d")
 	)
-	(text "MPR121 (U1)"
+	(text "MPR121 (U3)"
 		(exclude_from_sim no)
 		(at 119.634 74.168 0)
 		(effects
@@ -4303,7 +4303,7 @@
 		)
 		(uuid "b5107bb7-9978-4b3c-b2af-3d8335b11345")
 	)
-	(text "3x Rotary Encoder (SW3,4,5)"
+	(text "3x Rotary Encoder (SW1,2,4)"
 		(exclude_from_sim no)
 		(at 133.35 109.22 0)
 		(effects
@@ -4358,24 +4358,6 @@
 		(uuid "57adf090-33d1-4477-bb5c-08e7fe14dc01")
 	)
 	(junction
-		(at 54.61 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5d3fafcc-d169-4661-bc28-8f73ec48443e")
-	)
-	(junction
-		(at 55.88 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "62275752-9396-408a-9000-961869271989")
-	)
-	(junction
-		(at 59.69 20.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "78bd2ac5-7a8c-41b5-85de-30d764ffb684")
-	)
-	(junction
 		(at 148.59 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4410,6 +4392,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e333fe9e-4217-489b-b9b3-81930375b1d2")
+	)
+	(junction
+		(at 55.88 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e716543b-0623-4ef1-b7eb-5feeb40e6b27")
 	)
 	(junction
 		(at 73.66 160.02)
@@ -4551,17 +4539,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 20.32) (xy 59.69 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e7675c4-f82c-4e69-8508-937f710db7d3")
-	)
-	(wire
-		(pts
-			(xy 54.61 20.32) (xy 54.61 24.13)
+			(xy 54.61 19.05) (xy 54.61 24.13)
 		)
 		(stroke
 			(width 0)
@@ -4741,7 +4719,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 20.32) (xy 59.69 24.13)
+			(xy 59.69 19.05) (xy 59.69 24.13)
 		)
 		(stroke
 			(width 0)
@@ -5111,6 +5089,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 130.81) (xy 55.88 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca4b98d1-7d9e-49df-8211-a8f0e3c5f50e")
+	)
+	(wire
+		(pts
 			(xy 167.64 43.18) (xy 165.1 43.18)
 		)
 		(stroke
@@ -5138,16 +5126,6 @@
 			(type default)
 		)
 		(uuid "ce64c698-b4d4-4578-b69b-b6289ced274b")
-	)
-	(wire
-		(pts
-			(xy 53.34 20.32) (xy 54.61 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6056735-4820-468e-b742-898d5b8bd865")
 	)
 	(wire
 		(pts
@@ -5281,16 +5259,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 19.05) (xy 59.69 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f38c077d-5af4-4ad8-93b9-6fed4e792dd8")
-	)
-	(wire
-		(pts
 			(xy 30.48 69.85) (xy 31.75 69.85)
 		)
 		(stroke
@@ -5318,16 +5286,6 @@
 			(type default)
 		)
 		(uuid "fb3f6372-3885-49a4-b2b3-e31e81a183c0")
-	)
-	(wire
-		(pts
-			(xy 54.61 19.05) (xy 54.61 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc5eeea9-54c1-46bb-aced-6e9599244a84")
 	)
 	(wire
 		(pts
@@ -12161,7 +12119,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 55.88 133.35 0)
+		(at 55.88 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12172,7 +12130,7 @@
 		(fields_autoplaced yes)
 		(uuid "a7645396-3857-42c8-97c0-aff1ad773f78")
 		(property "Reference" "#FLG01"
-			(at 55.88 131.445 0)
+			(at 55.88 128.905 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12183,7 +12141,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 55.88 128.27 0)
+			(at 55.88 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12193,7 +12151,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 133.35 0)
+			(at 55.88 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12204,7 +12162,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 133.35 0)
+			(at 55.88 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12215,7 +12173,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 55.88 133.35 0)
+			(at 55.88 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
