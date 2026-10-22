@@ -1,5 +1,5 @@
 Item,Qty,Supplier,Cost/item,Total Cost,link
-RaspberryPi_Pico,1,,$0.00,$0.00,
+RaspberryPi_Pico,1,rpibolt,$8.83,$8.83,https://www.rpibolt.hu/Raspberry-Pi-Pico-2-W-hivatalos-RP2350-chip-ketmag
 10uF,1,,$0.00,$0.00,
 100nF,9,,$0.00,$0.00,
 2.2uF,2,,$0.00,$0.00,
