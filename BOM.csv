@@ -1,18 +1,19 @@
-"Reference","Qty","Value","DNP","Exclude from BOM","Exclude from Board","Footprint","Datasheet"
-"A1","1","RaspberryPi_Pico","","","","Module:RaspberryPi_Pico_Common_THT","https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf"
-"C1","1","10uF","","","","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",""
-"C2,C3,C6,C7,C8,C9,C10,C11,C12","9","100nF","","","","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",""
-"C4,C5","2","2.2uF","","","","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",""
-"J1","1","AudioJack3","","","","Connector_Audio:Jack_3.5mm_Lumberg_1503_02_Horizontal",""
-"R1,R2","2","100R","","","","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",""
-"R3,R4","2","4.7k","","","","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",""
-"R5","1","10k","","","","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",""
-"R6","1","75k","","","","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",""
-"R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18","12","330R","","","","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",""
-"RV1,RV2","2","10k","","","","Potentiometer_THT:Potentiometer_Bourns_PTA1543_Single_Slide",""
-"SW1,SW2,SW4","3","RotaryEncoder_Switch","","","","Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm",""
-"SW3,SW5","2","SW_Push","","","","Button_Switch_THT:SW_PUSH_6mm",""
-"TP1,TP2,TP3,TP4,TP5,TP6,TP7,TP8,TP9,TP10,TP11,TP12","12","TestPoint","","","","Library:TouchPad_D12mm",""
-"U1","1","PCM5102A","","","","Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm","https://www.ti.com/lit/ds/symlink/pcm5102a.pdf"
-"U2","1","ER_OLEDM0.91_1x-I2C","","","","Display:ER_OLEDM0.91_1x-I2C","https://www.buydisplay.com/download/manual/ER-OLEDM0.91-1_Datasheet.pdf"
-"U3","1","MPR121QR2","","","","Package_DFN_QFN:UQFN-20_3x3mm_P0.4mm","https://resurgentsemi.com/wp-content/uploads/2018/09/MPR121_rev5-Resurgent.pdf?d453f8&d453f8"
+Item,Qty,Supplier,Cost/item,Total Cost,link
+RaspberryPi_Pico,1,,$0.00,$0.00,
+10uF,1,,$0.00,$0.00,
+100nF,9,,$0.00,$0.00,
+2.2uF,2,,$0.00,$0.00,
+AudioJack3,1,,$0.00,$0.00,
+100R,2,,$0.00,$0.00,
+4.7k,2,,$0.00,$0.00,
+10k,1,,$0.00,$0.00,
+75k,1,,$0.00,$0.00,
+330R,12,,$0.00,$0.00,
+10k,2,,$0.00,$0.00,
+RotaryEncoder_Switch,3,,$0.00,$0.00,
+SW_Push,2,,$0.00,$0.00,
+TestPoint,12,,$0.00,$0.00,
+PCM5102A,1,,$0.00,$0.00,
+ER_OLEDM0.91_1x-I2C,1,,$0.00,$0.00,
+MPR121QR2,1,,$0.00,$0.00,
+Estimated total shipping,1,,,$0.00,
