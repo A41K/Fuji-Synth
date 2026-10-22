@@ -11,7 +11,7 @@ AudioJack3,1,,$0.00,$0.00,
 330R,12,,$0.00,$0.00,
 10k,2,,$0.00,$0.00,
 RotaryEncoder_Switch,3,,$0.00,$0.00,
-PCM5102A,1,,$0.00,$0.00,
+PCM5102A,1,modulshop,$5.52,$5.52,https://modulshop.hu/pcm5102a-dac-audio-dekoder-modul-i2s-interfesszel-2069
 ER_OLEDM0.91_1x-I2C,1,,$0.00,$0.00,
 MPR121QR2,1,,$0.00,$0.00,
 Estimated total shipping,1,,,$0.00,
