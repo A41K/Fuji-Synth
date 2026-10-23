@@ -6,7 +6,7 @@
 > [!NOTE]
 > This devlog is mirrored from [Half Life](https://halflife.hackclub.com) – [open the project](https://halflife.hackclub.com/projects/cmvfef9z9003m01q7vhf4wpol). Editing it here will not change the platform's copy, and the next sync overwrites this file.
 
-> Music project
+> A digital synth with 12 touch sensors, 3 rotary encoders, 2 buttons, a screen and a robust firmware.
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
