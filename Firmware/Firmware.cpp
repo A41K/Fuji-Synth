@@ -458,3 +458,70 @@ static void poll_buttons(uint32_t now) {
         }
     }
 }
+
+// other controls
+static float read_pot(int ch) {
+    adc_select_input(ch);
+    uint32_t s = 0;
+    for (int i = 0; i < 16; i++) s += adc_read();
+    return s / (16.0f * 4095.0f); 
+}
+
+static void env_adjust(int d) {
+    auto step_ms = [](int v, int d, int lo, int hi) {
+        int st = v / 10; if (st < 1) st = 1;
+        return (int)fminf(hi, fmaxf(lo, v + d * st));
+    };
+    switch (env_sel) {
+        case 0: env_a = step_ms(env_a, d, 2, 2000); break;
+        case 1: env_d = step_ms(env_d, d, 10, 3000); break;
+        case 2: env_s = (int)fminf(100m fmaxf(0, env_s + d * 2)); break;
+        case 3: env_r = step_ms(env_r, d, 10, 4000); break;
+    }
+    apply_env();
+}
+
+static float last_cut_shown = 0.6f;
+
+static void control_tick(uint32_t now, uint32_t dt_ms) {
+    poll_buttons(now);
+
+    int d;
+    if ((d = enc_take(0))) { wave = (wave + d) & 3; P.wave = wave; t_wave = now; ui_urgent = true; }
+    if ((d = enc_take(1))) { res = fminf(1.0f, fmaxf(0.0f, res + d * 0.02f)); t_res = now; ui_urgent = true; }
+    if ((d = enc_take(2))) { env_adjust(d); t_env = now; ui_urgent = true; }
+
+    float p = read_pot(0);
+    float f = read_pot(1);
+    if (POT_PITCH_INVERT)  p = 1.0f - p;
+    if (POT_FILTER_INVERT) f = 1.0f - f;
+    pitch_pot  += (p - pitch_pot)  * 0.25f;
+    filter_pot += (f - filter_pot) * 0.25f;
+
+    float n = (pitch_pot - 0.5f) * 2.0f;
+    const float dz = 0.06f;
+    if (fabsf(n) < dz) n = 0.0f;
+    else n = (n > 0 ? 1.0f : -1.0f) * (fabsf(n) - dz) / (1.0f - dz);
+    bend = n * 12.0f;
+
+    if (fabsf(filter_pot - last_cut_shown) > 0.015f) {
+        last_cut_shown = filter_pot; t_cut = now; ui_urgent = true;
+    }
+
+    static uint32_t last_filt = 0;
+    cut_smooth += (filter_pot - cut_smooth) * (1.0f - powf(0.9f, (float)dt_ms));
+    if (now - last_filt >= 2) { last_filt = now; apply_filter(cut_smooth); }
+
+    
+    bool want_gate = (stack_n > 0) || (hold && have_note);
+    if (stack_n > 0) { cur_pad = stack_pads[stack_n - 1]; have_note = true; }
+    if (have_note) {
+        float target = BASE_NOTE + PAD_TO_SEMI[cur_pad] + 12 * octave + bend;
+        if (!gate_on || !glide) cur_semi = target;
+        else cur_semi += (target - cur_semi) * (1.0f - powf(0.97f, (float)dt_ms));
+        float freq = 440.0f * exp2f((cur_semi - 69.0f) / 12.0f);
+        P.phase_inc = (uint32_t)(freq * 4294967296.0 / SAMPLE_RATE);
+    }
+    gate_on = want_gate;
+    P.gate = gate_on ? 1 : 0;
+}
