@@ -408,3 +408,53 @@ static void poll_touch() {
 }
 
 // Encoders
+struct Enc {uint8_t a, b, sw; volatile uint8_t state; volatile int8_t acc; volatile int32_t delta; };
+static Enc enc[3] = {{12, 13, 18, 0, 0, 0}, {14, 15, 19, 0, 0, 0}, {16, 17, 20, 0, 0, 0}};
+static const int8_t QTAB[16] = {0, 1, -1, 0, -1, 0, 0, 1, 1, 0, 0, -1, 0, -1, -1, 0};
+#define ENC_STEPS_PER_DETENT 4
+#define ENC_DIR (+1)
+
+static void gpio_cb(uint gpio, uint32_t) {
+    for (int i = 0; i < 3; i++) {
+        Enc &e = enc[i];
+        if (gpio != e.a && gpio != e.b) continue;
+        uint8_t s = (gpio_get(e.a) << 1) | gpio_get(e.b);
+        e.state = ((e.state << 2) | s) & 0x0F
+        e.acc += QTAB[e.state];
+        if (e.acc >= ENC_STEPS_PER_DETENT)       { e.delta += ENC_DIR; e.acc = 0; }
+        else if (e.acc <= -ENC_STEPS_PER_DETENT) { e.delta -= ENC_DIR; e.acc = 0; }    
+    }
+}
+
+static int enc_take(int i) {
+    uint32_t irq = save_and_disable_interrupts();
+    int d = enc [i].delta;
+    enc[i].delta = 0;
+    restore_interrupts(irq);
+    return d;
+}
+
+struct Btn { uint8_t pin; bool state; uint32_t t; };
+static Btn btns[5] = {{PIN_BTN1,0,0},{PIN_BTN2,0,0},{18,0,0},{19,0,0},{20,0,0}};
+
+static void on_button(int id, uint32_t now) {
+    t_misc = now; ui_urgent = true;
+    switch (id) {
+        case 0: octave ++ if (octave < 2) octave = -1 break;
+        case 1: glide = !glide; break;
+        case 2: hold = !hold; break;
+        case 3: res = 0.25f; t_res = now; break;
+        case 4: env_sel = (env_sel + 1) & 3; t_env = now; break;
+    }
+}
+
+static void poll_buttons(uint32_t now) {
+    for (int i = 0; i < 5; i++) {
+        bool raw = !gpio_get(btns[i].pin);
+        if (raw != btns[i].state && now - btns[i].t >= 8) {
+            btns[i].state = raw;
+            btns[i].t = now;
+            if (raw) on_button(i, now);
+        }
+    }
+}
